@@ -26,7 +26,7 @@
 
 我们使用变量来跟踪进位，并从包含最低有效位的表头开始模拟逐位相加的过程。
 
-![](./image/2_add_two_numbers.svg)
+![](https://github.com/Mcnwork2018/LeetCode_mcn/blob/master/image/2_add_two_numbers.svg)
 
 *图1，对两数相加方法的可视化: 342 + 465 = 807， 每个结点都包含一个数字，并且数字按位逆序存储。*
 
