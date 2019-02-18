@@ -34,21 +34,16 @@
 ```javascript
 var sortArrayByParity = function (A) {
   const len = A.length;
-  if (len == 1) {
-    return A;
-  } else {
-    let evenNumber = [];
-    let oddNumber = [];
-    for (let i = 0; i < len; i++) {
-      if (A[i] % 2 == 0) {
-        evenNumber.push(A[i]);
-      }
-      if (A[i] % 2 != 0) {
-        oddNumber.push(A[i]);
-      }
+  if (len === 1) return A;
+  let evenNumber = [], oddNumber = [];
+  for (let i = 0; i < len; i++) {
+    if (A[i] % 2 === 0) {
+      evenNumber.push(A[i]);
+    } else {
+      oddNumber.push(A[i]);
     }
-    return evenNumber.concat(oddNumber)
   }
+  return evenNumber.concat(oddNumber);
 };
 ```
 
@@ -67,16 +62,15 @@ var sortArrayByParity = function (A) {
 ```javascript
 var sortArrayByParity = function (A) {
   const len = A.length;
-  if (len == 1) return A;
+  if (len === 1) return A;
   let eoNum = [];
-  for (let i = 0; i < len; i++) {
-    if (A[i] % 2 == 1) {
-      eoNum.push(A[i]);
+  A.forEach((item, index, array) => {
+    if (item % 2 === 1) {
+      eoNum.push(item);
+    } else {
+      eoNum.unshift(item);
     }
-    if (A[i] % 2 == 0) {
-      eoNum.unshift(A[i]);
-    }
-  }
+  });
   return eoNum;
 };
 ```
@@ -94,21 +88,35 @@ var sortArrayByParity = function (A) {
 **算法**
 
 ```javascript
+// 第一种思路
 var sortArrayByParity = function (A) {
   const len = A.length;
-  if (len == 1) return A;
-  let i = 0,
-    j = len - 1;
+  if (len === 1) return A;
+  let i = 0, j = len - 1;
   while (i < j) {
-    if ((A[i] % 2 == 1) && (A[j] % 2 == 0)) {
+    if ((A[i] % 2 === 1) && (A[j] % 2 === 0)) {
       let temp = A[j];
-      A[j] = A[i];
-      A[i] = temp;
-      i++;
-      j--;
+      A[j--] = A[i];
+      A[i++] = temp;
     }
-    if (A[i] % 2 == 0) i++;
-    if (A[j] % 2 == 1) j--;
+    if (A[i] % 2 === 0) i++;
+    if (A[j] % 2 === 1) j--;
+  }
+  return A;
+};
+// 第二种思路
+var sortArrayByParity = function (A) {
+  const len = A.length;
+  if (len === 1) return A;
+  let i = 0, j = len - 1;
+  while (i < j) {
+    while ( A[i] % 2 === 0 ) i++;
+    while ( A[j] % 2 === 1 ) j--;
+    while( i < j && (A[i] % 2 === 1) && (A[j] % 2 === 0) ){
+      let temp = A[j];
+      A[j--] = A[i];
+      A[i++] = temp;
+    }
   }
   return A;
 };
