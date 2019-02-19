@@ -36,7 +36,7 @@ var sortArrayByParity = function (A) {
   if (len === 1) return A;
   let i = 0, j = len - 1;
   while (i < j) {
-    if ((A[i] % 2 === 1) && (A[j] % 2 === 0)) {
+    if ( (A[i] % 2 === 1) && (A[j] % 2 === 0) ) {
       let temp = A[j];
       A[j--] = A[i];
       A[i++] = temp;
@@ -54,7 +54,7 @@ var sortArrayByParity = function (A) {
   while (i < j) {
     while ( A[i] % 2 === 0 ) i++;
     while ( A[j] % 2 === 1 ) j--;
-    while( i < j && (A[i] % 2 === 1) && (A[j] % 2 === 0) ){
+    while( i < j && A[i] % 2 === 1 && A[j] % 2 === 0 ){
       let temp = A[j];
       A[j--] = A[i];
       A[i++] = temp;
