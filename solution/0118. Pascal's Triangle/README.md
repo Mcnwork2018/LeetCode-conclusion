@@ -59,10 +59,8 @@ var generate = function(numRows) {
 - 时间复杂度：O(numRows^2)
 
   虽然更新 `triangle` 中的每个值都是在常量时间内发生的， 但它会被执行 O(numRows^2) 次。想要了解原因，就需要考虑总共有多少 次循环迭代。很明显外层循环需要运行 numRows 次，但在外层循环的每次迭代中，内层 循环要运行 rowNum 次。因此，`triangle` 发生的更新总数为 1+2+3+…+numRows，根据高斯公式 有
-  $$
-  \begin{aligned} \frac{numRows(numRows+1)}{2} &= \frac{numRows^2 + numRows}{2} \\ &= \frac{numRows^2}{2} + \frac{numRows}{2} \\ &= O(numRows^2) \end{aligned}
-  $$
-  
+
+  ![高斯公式](https://github.com/Mcnwork2018/LeetCode_mcn/blob/master/image/118formula.png)
 
 - 空间复杂度：O(numRows^2)
 
