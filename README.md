@@ -14,6 +14,7 @@
 | 0118 | [Pascal's Triangle](https://github.com/Mcnwork2018/LeetCode_mcn/tree/master/solution/0118.%20Pascal's%20Triangle) | 简单 | 数组               |
 | 0509 | [Fibonacci Number](https://github.com/Mcnwork2018/LeetCode_mcn/tree/master/solution/0509.%20Fibonacci%20Number) | 简单 | 数组               |
 | 0561 | [Array Partition I](https://github.com/Mcnwork2018/LeetCode_mcn/tree/master/solution/0561.%20Array%20Partition%20I) | 简单 | 数组               |
+| 0566 | [Reshape the Matrix](https://github.com/Mcnwork2018/LeetCode_mcn/tree/master/solution/0566.%20Reshape%20the%20Matrix) | 简单 | 数组               |
 | 0832 | [Flipping an Image](https://github.com/Mcnwork2018/LeetCode_mcn/tree/master/solution/0832.%20Flipping%20an%20Image) | 简单 | 数组               |
 | 0867 | [Transpose Matrix](https://github.com/Mcnwork2018/LeetCode_mcn/tree/master/solution/0867.%20Transpose%20Matrix) | 简单 | 数组               |
 | 0905 | [Sort Array By Parity](https://github.com/Mcnwork2018/LeetCode_mcn/tree/master/solution/0905.%20Sort%20Array%20By%20Parity) | 简单 | 数组               |
