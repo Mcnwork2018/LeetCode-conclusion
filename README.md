@@ -18,6 +18,7 @@
 | 0867 | [Transpose Matrix](https://github.com/Mcnwork2018/LeetCode_mcn/tree/master/solution/0867.%20Transpose%20Matrix) | 简单 | 数组               |
 | 0905 | [Sort Array By Parity](https://github.com/Mcnwork2018/LeetCode_mcn/tree/master/solution/0905.%20Sort%20Array%20By%20Parity) | 简单 | 数组               |
 | 0922 | [Sort Array By Parity II](https://github.com/Mcnwork2018/LeetCode_mcn/tree/master/solution/0922.%20Sort%20Array%20By%20Parity%20II) | 简单 | 排序、数组         |
+| 0976 | [Largest Perimeter Triangle](https://github.com/Mcnwork2018/LeetCode_mcn/tree/master/solution/0976.%20Largest%20Perimeter%20Triangle) | 简单 | 数组、数学         |
 | 0977 | [Squares of a Sorted Array](https://github.com/Mcnwork2018/LeetCode_mcn/tree/master/solution/0977.%20Squares%20of%20a%20Sorted%20Array) | 简单 | 排序、数组、双指针 |
 | 0985 | [Sum of Even Numbers After Queries](https://github.com/Mcnwork2018/LeetCode_mcn/tree/master/solution/0985.%20Sum%20of%20Even%20Numbers%20After%20Queries) | 简单 | 数组               |
 
