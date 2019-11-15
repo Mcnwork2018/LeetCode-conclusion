@@ -10,6 +10,7 @@
 | :--: | :----------------------------------------------------------: | :--: | :----------------- |
 | 0001 | [Two Sum](https://github.com/Mcnwork2018/LeetCode_mcn/tree/master/solution/0001.%20Two%20Sum) | 简单 | 数组、哈希表       |
 | 0002 | [Add Two Numbers](https://github.com/Mcnwork2018/LeetCode_mcn/tree/master/solution/0002.%20Add%20Two%20Numbers) | 中等 | 链表、数学         |
+| 0026 | [Remove Duplicates from Sorted Array][https://github.com/Mcnwork2018/LeetCode-conclusion/tree/master/solution/0026.%20Remove%20Duplicates%20from%20Sorted%20Array] | 简单 | 数组、双指针       |
 | 0007 | [Reverse Integer](https://github.com/Mcnwork2018/LeetCode_mcn/tree/master/solution/0007.%20Reverse%20Integer) | 简单 | 数学               |
 | 0118 | [Pascal's Triangle](https://github.com/Mcnwork2018/LeetCode_mcn/tree/master/solution/0118.%20Pascal's%20Triangle) | 简单 | 数组               |
 | 0509 | [Fibonacci Number](https://github.com/Mcnwork2018/LeetCode_mcn/tree/master/solution/0509.%20Fibonacci%20Number) | 简单 | 数组               |
