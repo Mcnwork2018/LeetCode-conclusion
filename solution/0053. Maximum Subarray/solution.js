@@ -20,3 +20,29 @@ var maxSubArray2 = function(nums) {
   }
   return ans;
 };
+// 第三种解法：分治法
+var maxSubArray3 = function(nums) {
+  return divide(nums, 0,  nums.length - 1);
+};
+
+function divide (nums, left, right) {
+  if (left === right) {
+    return nums[left];
+  }
+  let center = parseInt((left + right) / 2);
+  let leftMaxSum = divide(nums, left, center);
+  let rightMaxSum = divide(nums, center + 1, right);
+  let leftBorderSum = nums[center];
+  let leftSum = nums[center];
+  for (let i = center - 1; i >= 0; i--) {
+    leftSum += nums[i];
+    leftBorderSum = Math.max(leftSum, leftBorderSum);
+  }
+  let rightBorderSum = nums[center + 1];
+  let rightSum = nums[center + 1];
+  for (let i = center + 2; i <= right; i++) {
+    rightSum += nums[i];
+    rightBorderSum = Math.max(rightSum, rightBorderSum);
+  }
+  return Math.max(leftMaxSum, rightMaxSum,  leftBorderSum + rightBorderSum);
+}
